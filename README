@@ -1,0 +1,40 @@
+/*
+To run on Windows:
+
+1. Open Visual Studio.
+2. Clone a repository. Fill in Repository Location and Path.
+3. Click "Clone".
+
+Chances are, you may need to modify settings to get the program to work. FIRST, do step 1. 
+Then, try to build and run the solution (At the top menu, click Build -> Clean Solution. Then click Build -> Rebuild Solution. If no errors, click Local Windows Debugger).
+If there are errors, check/modify your settings by doing steps 2 through 5 for each indicated project (bulleted under each step).
+Once you do those steps, build and run the solution: Build -> Clean Solution. Then click Build -> Rebuild Solution. Last, click Local Windows Debugger.
+
+1. Right click solution -> Properties -> Common Properties -> Configure Startup Projects -> Multiple startup projects -> Action = Start
+- stub_server (if not at top, move to top)
+- phase4_controller
+
+2. Right click project -> Properties -> Configuration Properties -> Debugging -> Command Arguments = input dll output temp
+- phase4_controller
+
+3. Right click project -> Properties -> Configuration Properties -> General -> Output Directory = $(SolutionDir)bin\
+- phase4_controller (main EXE) - makes sure relative paths like input, output, temp work correctly
+- mapper_worker
+- reducer_worker
+- stub_server
+
+4. Right click project -> Properties -> Configuration Properties -> General -> Output Directory = $(SolutionDir)dll\
+- mapper_dll
+- reducer_dll
+
+5. Right click project -> Properties -> Configuration Properties -> General -> Intermediate Directory = $(SolutionDir)build\$(ProjectName)\
+Right click project -> Properties -> Configuration Properties -> Debugging -> Working Directory = $(SolutionDir)
+Right click project -> Properties -> Configuration Properties -> C/C++ -> General -> Additional Include Directories = $(SolutionDir)headers
+- mapper_dll
+- mapper_worker
+- phase4_controller
+- reducer_dll
+- reducer_worker
+- stub_server
+
+*/
