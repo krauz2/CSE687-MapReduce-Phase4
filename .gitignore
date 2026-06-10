@@ -1,0 +1,17 @@
+.vs/
+x64/
+Debug/
+Release/
+dlls/
+output/
+temp/
+logs/
+*.obj
+*.pdb
+*.ilk
+*.tlog
+*.lastbuildstate
+*.recipe
+*.log
+*.dll
+*.exe

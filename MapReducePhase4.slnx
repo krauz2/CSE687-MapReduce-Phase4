@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="mapper_dll/mapper_dll.vcxproj" Id="0c647ab1-378b-4899-9a23-a264c81a960d" />
+  <Project Path="mapper_worker/mapper_worker.vcxproj" Id="98b8ef6f-5461-4081-9be2-3a3322a0e5ea" />
+  <Project Path="phase3_controller/phase3_controller.vcxproj" Id="f24ff87d-83ce-46a4-88d5-8b82fa4168bc" />
+  <Project Path="reducer_dll/reducer_dll.vcxproj" Id="6743ad91-818d-48ff-97f9-ddcaaae471b7" />
+  <Project Path="reducer_worker/reducer_worker.vcxproj" Id="135ceca2-76f4-48c5-9e3f-89fd4b5b8466" />
+  <Project Path="stub_server/stub_server/stub_server.vcxproj" Id="7c49f144-b368-47b8-a9ae-b83c41eabafd" />
+</Solution>
