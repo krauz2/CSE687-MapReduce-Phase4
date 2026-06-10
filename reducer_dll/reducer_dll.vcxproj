@@ -71,7 +71,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>C:\Users\Stephen\OneDrive\Desktop\SYR classes\CSE687\MapReducePhase3\MapReducePhase3\dlls\</OutDir>
+    <OutDir>$(SolutionDir)dll\</OutDir>
+    <IntDir>$(SolutionDir)build\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)dll\</OutDir>
+    <IntDir>$(SolutionDir)build\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)dll\</OutDir>
+    <IntDir>$(SolutionDir)build\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)dll\</OutDir>
+    <IntDir>$(SolutionDir)build\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -82,6 +95,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -100,6 +114,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -116,7 +131,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Users\Stephen\OneDrive\Desktop\SYR classes\CSE687\MapReducePhase4\MapReducePhase4\headers</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -136,6 +151,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -144,16 +160,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\transfer files from github\file_manager.h" />
-    <ClInclude Include="..\..\..\transfer files from github\reducer.h" />
-    <ClInclude Include="..\..\..\transfer files from github\reducer_dll.h" />
+    <ClInclude Include="..\headers\file_manager.h" />
+    <ClInclude Include="..\headers\reducer.h" />
+    <ClInclude Include="..\headers\reducer_dll.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\transfer files from github\file_manager.cpp" />
-    <ClCompile Include="..\..\..\transfer files from github\reducer.cpp" />
-    <ClCompile Include="..\..\..\transfer files from github\reducer_dll.cpp" />
+    <ClCompile Include="..\src\file_manager.cpp" />
+    <ClCompile Include="..\src\reducer.cpp" />
+    <ClCompile Include="..\src\reducer_dll.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

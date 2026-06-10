@@ -24,27 +24,27 @@
     <ClCompile Include="..\..\src\net_utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\stub_server.cpp">
+    <ClCompile Include="..\..\src\stub_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\stub_main.cpp">
+    <ClCompile Include="..\..\src\stub_server.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\headers\logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\headers\message_protocol.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\headers\net_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\headers\phase4_config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\headers\stub_server.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\headers\logger.h">
+    <ClInclude Include="..\..\headers\phase4_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "stub_server\\stub_server\\stub_server.vcxproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "phase3_controller\\phase3_controller.vcxproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
